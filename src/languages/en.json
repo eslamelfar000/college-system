@@ -1,0 +1,16 @@
+{
+    "logo" : "Logo",
+    "sign-up":"Sign Up",
+    "login":"Login",
+    "home":"Home",
+    "email": "Email",
+    "password": "Password",
+    "no-account": "Don't have account?",
+    "have-account": "Do you have account?",
+    "name":"Name",
+    "phone":"Phone Number",
+    "university":"University",
+    "college":"College",
+    "department":"Department",
+    "confirm":"Confirm Password"
+}

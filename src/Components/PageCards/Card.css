@@ -1,0 +1,109 @@
+.cards {
+  padding: 80px 0px;
+  text-align: center;
+}
+
+.cards .head {
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards .row {
+  display: flex;
+  justify-content: center;
+}
+
+.cards .head h3 {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.cards .head span {
+  color: var(--main-color);
+  font-size: 30px;
+}
+
+.cards .head p {
+  font-size: 17px;
+  font-weight: 500;
+  width: 50%;
+}
+
+.cards .row .col-card {
+  padding: 20px 30px;
+  padding-top: 50px;
+  border: 3px solid var(--sec-color);
+  position: relative;
+  transition: 0.4s;
+  height: 100%;
+}
+
+.cards .row .col-card .icon {
+  position: absolute;
+  top: -45px;
+  right: 50%;
+  transform: translateX(50%);
+  padding: 10px 20px;
+  border-radius: 50%;
+  border: 3px solid var(--sec-color);
+  background: white;
+  transition: 0.4s;
+}
+
+.cards .row .col-card .icon i {
+  font-size: 40px;
+  transition: 0.4s;
+  color: var(--sec-color);
+}
+
+.cards .row .col-card:hover {
+  border-color: var(--main-color);
+}
+
+.cards .row .col-card:hover .icon {
+  border-color: var(--main-color);
+}
+
+.cards .row .col-card:hover .icon i {
+  color: var(--main-color);
+}
+
+.cards .row .col-card h3 {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--sec-color);
+  transition: 0.4s;
+}
+
+.cards .row .col-card:hover h3 {
+  color: var(--main-color);
+}
+
+.cards .row .col-card p {
+  font-size: 18px;
+  font-weight: 500;
+  opacity: 0.7;
+}
+
+@media (max-width: 991px) {
+  .cards .row .change-col {
+    margin-top: 70px;
+  }
+
+  .cards .head h3 {
+    font-size: 35px;
+  }
+
+  .cards .head p {
+    width: 100%;
+    padding: 0px 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .cards .row .col-12:not(:first-child) {
+    margin-top: 70px;
+  }
+}

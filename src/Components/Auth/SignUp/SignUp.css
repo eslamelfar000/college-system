@@ -1,0 +1,211 @@
+.sign-up {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px dashed var(--main-color);
+}
+
+.sign-up .form-cover {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.sign-up .form-cover .right-side {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.sign-up .form-cover .right-side::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: var(--main-color);
+  z-index: -1;
+}
+
+.sign-up .form-cover .right-side h2 {
+  font-size: 70px;
+  font-weight: 700;
+}
+
+.sign-up .form-cover .left-side {
+  width: 100%;
+  padding: 100px 0px;
+}
+
+.sign-up .form-cover .left-side form {
+  padding: 0px 100px;
+}
+
+@media (max-width: 1199px) {
+  .sign-up .form-cover .left-side form {
+    padding: 0px 40px;
+  }
+}
+
+.sign-up .form-cover .left-side h2 {
+  margin-bottom: 50px;
+}
+
+.sign-up .form-cover .left-side .in-div {
+  margin-bottom: 25px;
+}
+
+.sign-up .form-cover .left-side .in-div label {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.sign-up .form-cover .left-side .in-div label span {
+  color: red;
+  margin-right: 5px;
+}
+
+.sign-up .form-cover .in-en .in-div label span {
+  margin-right: 0px;
+  margin-left: 5px;
+}
+
+.sign-up .form-cover .left-side .in-div input,
+.sign-up .form-cover .left-side .in-div select {
+  display: block;
+  width: 100%;
+  border: 1px solid rgb(231, 231, 231);
+  outline: none;
+  transition: 0.4s;
+  font-size: 14px;
+  padding: 10px;
+  background: rgb(231, 231, 231);
+  border-radius: 10px;
+  opacity: 0.6;
+}
+
+.sign-up .form-cover .left-side .in-div input:focus,
+.sign-up .form-cover .left-side .in-div select:focus {
+  border-color: var(--main-color);
+  opacity: 1;
+  background: ghostwhite;
+}
+
+.sign-up .form-cover .left-side .in-div .in-error {
+  font-size: 14px;
+  color: red;
+  margin-top: 10px;
+}
+
+.sign-up .form-cover .left-side .in-div .pass-in {
+  position: relative;
+}
+
+.sign-up .form-cover .left-side .in-div .pass-in i {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  font-size: 20px;
+  transform: translateY(-50%);
+}
+
+.sign-up .form-cover .in-en .in-div .pass-in i {
+  right: 15px !important;
+  left: auto !important;
+}
+
+.sign-up .form-cover .left-side .in-div .in-num {
+  display: flex;
+  align-items: center;
+}
+
+.sign-up .form-cover .in-en .in-div .in-num {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.sign-up .form-cover .left-side .in-div .in-num span {
+  width: auto;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  background: rgba(234, 234, 234, 0.471);
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  user-select: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif !important;
+}
+
+.sign-up .form-cover .left-side .in-div .in-num span img {
+  width: 20px;
+  margin-right: 5px;
+}
+
+.sign-up .form-cover .left-side .sub {
+  margin-top: 40px;
+}
+
+.sign-up .form-cover .left-side .sub button {
+  width: 100%;
+  padding: 10px 20px;
+  background: var(--main-color);
+  border: 2px solid var(--main-color);
+  color: white;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+
+.sign-up .form-cover .left-side .sub button:hover {
+  background: #bf2c38;
+  border-color: #bf2c38;
+}
+
+.sign-up .form-cover .left-side .to-login {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.sign-up .form-cover .left-side .to-login a {
+  text-decoration: none;
+  color: var(--main-color);
+  margin-right: 10px;
+}
+
+.sign-up .form-cover .in-en .to-login a {
+  margin-left: 10px;
+  margin-right: 0px;
+}
+
+@media (max-width: 767px) {
+  .sign-up .form-cover {
+    display: block;
+  }
+
+  .sign-up .form-cover {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .sign-up .form-cover .right-side {
+    padding: 30px 0px;
+  }
+
+  .sign-up .form-cover .left-side {
+    padding: 60px 0px;
+  }
+
+  .sign-up .form-cover .left-side form {
+    padding: 0px 20px;
+  }
+}

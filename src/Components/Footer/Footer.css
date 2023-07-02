@@ -1,0 +1,77 @@
+.footer {
+  background: url(../../assets/banner-3.png);
+}
+
+.footer .footer-cover {
+  padding: 20px 0px;
+  background: linear-gradient(25deg, #e63946, rgba(0, 0, 0, 0.334));
+}
+
+.footer .logo-img a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer .logo-img a h2 {
+  font-size: 70px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.footer .row .some-links ul,
+.footer .row .social ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer .row .social ul {
+  display: flex;
+  align-items: center;
+}
+
+.footer .row .some-links ul li {
+  margin-bottom: 20px;
+}
+
+.footer .row .social ul li {
+  margin-left: 25px;
+}
+
+.footer .row .some-links ul li a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+
+.footer .row .some-links ul li a i {
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+.footer .row .some-links ul li a::before {
+  position: absolute;
+  content: "";
+  width: 50%;
+  height: 2px;
+  border-bottom: 2px solid white;
+  bottom: 0px;
+  right: 0;
+  transition: 0.4s;
+}
+
+.footer .row .some-links ul li a:hover::before {
+  width: 100%;
+}
+
+.footer .row .social ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 26px;
+}
+
+@media (max-width: 767px) {
+  .footer .row .col-12:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
